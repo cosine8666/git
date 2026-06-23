@@ -1,0 +1,194 @@
+:root {
+  --color-primary: #7b61ff;
+  --color-secondary: #5f8bff;
+  --color-accent: #ffb86b;
+
+  --color-background: #545e5a;
+  --color-surface: #656c79;
+  --color-card: #3b6d4e;
+
+  --color-text: #eaead4;
+  --color-text-secondary: #cbd5e1;
+  --color-text-muted: #94a3b8;
+
+  --color-border: #334155;
+
+  --color-success: #22c55e;
+  --color-warning: #facc15;
+  --color-danger: #ef4444;
+
+  --gradient-hero: linear-gradient(
+    135deg,
+    #7b61ff 0%,
+    #5f8bff 50%,
+    #ffb86b 100%
+  );
+
+  --gradient-card: linear-gradient(
+    145deg,
+    rgba(123, 97, 255, 0.15),
+    rgba(95, 139, 255, 0.05)
+  );
+
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  --shadow-glow: 0 0 40px rgba(123, 97, 255, 0.3);
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 36px;
+
+  /* 品牌 */
+
+  --brand-color: #7b61ff;
+  --brand-gradient: linear-gradient(135deg, #7b61ff, #5f8bff, #ffb86b);
+
+  /* 首頁 */
+
+  --hero-bg: var(--brand-gradient);
+  --hero-title: #ffffff;
+  --hero-subtitle: #e2e8f0;
+
+  /* 作品集 */
+
+  --portfolio-bg: #ffffff;
+  --portfolio-card: #f8fafc;
+
+  /* 專案 */
+
+  --project-color: #5f8bff;
+
+  /* 關於我 */
+
+  --about-color: #7b61ff;
+
+  /* 聯絡我 */
+
+  --contact-color: #ffb86b;
+
+  /* 工作室 */
+
+  --studio-color: #9f7aea;
+
+  /* APP */
+
+  --app-color: #95b5dd;
+
+  /* 教育 */
+
+  --education-color: #34d399;
+
+  /* 公益 */
+
+  --charity-color: #f472b6;
+
+  body {
+    background-color: var(--color-background);
+  }
+  .s01 {
+    background-color: var(--color-surface);
+    height: 100vh;
+  }
+  .s01 .box01 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-card);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .s01 .box02 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-card);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .s01 .box03 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-card);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  .s01 .box04 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--color-card);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .s01 .userimage {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    left: 100px;
+    bottom: 100px;
+    /* background-color:var(--color-danger); */
+    background-image: url(images/Misty\ Greens.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    box-shadow: var(--shadow-glow);
+  }
+  .s01 .userText {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    left: 100px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+  }
+  /* s02作品區 */
+  .s02 {
+    padding: 80px 10%;
+    background-color: var(--color-surface);
+    text-align: left;
+  }
+
+  .s02 h2 {
+    color: var(--color-text);
+    margin-top: 0;
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .s02 .card1 {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    min-height: 200px;
+    margin: 15px 0;
+    background-color: var(--app-color);
+    padding: 36px;
+    text-align: left;
+    border-radius: var(--radius-md);
+    box-sizing: border-box;
+  }
+
+  .s02 .card1 h3 {
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  .s02 .card1 p {
+    margin-bottom: 16px;
+    line-height: 1.8;
+  }
+  .s02 .card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--color-text);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+}
